@@ -86,7 +86,6 @@ if __name__ == '__main__':
     dispatcher.add_handler(CommandHandler('export', cmd_export))
     dispatcher.add_handler(CommandHandler('all', cmd_all))
     dispatcher.add_handler(CommandHandler('wipe', cmd_wipe))
-    dispatcher.add_handler(CommandHandler('source', cmd_source))
     dispatcher.add_handler(CommandHandler('auth', cmd_get_auth_url))
     dispatcher.add_handler(CommandHandler('verify', cmd_verify, pass_args=True))
     dispatcher.add_handler(CommandHandler('export_friends', cmd_export_friends))
