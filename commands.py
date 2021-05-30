@@ -41,7 +41,6 @@ Here's the commands:
 - /verify - send Twitter verifier code to complete authorization process
 - /export\_friends - generate /sub command to subscribe to all your Twitter friends (authorization required)
 - /set\_timezone - set your [timezone name]({}) (for example Asia/Tokyo)
-- /source - info about source code
 - /help - view help text
 This bot is free open source software, check /source if you want to host it!
 """.format(
@@ -190,13 +189,6 @@ def cmd_wipe(bot, update, chat=None):
     bot.reply(update, "Okay, I'm forgetting about this chat. " + subs +
                     " Come back to me anytime you want. Goodbye!")
     chat.delete_instance(recursive=True)
-
-
-@with_touched_chat
-def cmd_source(bot, update, chat=None):
-    bot.reply(update, "This bot is Free Software under the LGPLv3. "
-                    "You can get the code from here: "
-                    "https://github.com/franciscod/telegram-twitter-forwarder-bot")
 
 
 @with_touched_chat
