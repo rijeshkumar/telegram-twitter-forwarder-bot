@@ -77,6 +77,7 @@ class Tweet(BaseModel):
     tw_id = BigIntegerField(unique=True)
     known_at = DateTimeField(default=datetime.datetime.now)
     text = TextField()
+    created_at = DateTimeField()
     twitter_user = ForeignKeyField(TwitterUser, related_name='tweets')
     photo_url = TextField(default='')
 
