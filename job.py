@@ -122,6 +122,7 @@ class FetchAndSendTweetsJob(Job):
                     'tw_id': tweet.id,
                     'text': tweet_text,
                     'twitter_user': tw_user,
+                    'created_at': tweet.created_at,
                     'photo_url': photo_url,
                 }
                 try:
