@@ -47,7 +47,6 @@ class TwitterForwarderBot(Bot):
                 text="""
 {link_preview}*{name}*:
 {text}
--- [Link to this Tweet](https://twitter.com/{screen_name}/status/{tw_id})
 """
                     .format(
                     link_preview=photo_url,
