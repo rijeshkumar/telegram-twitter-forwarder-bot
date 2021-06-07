@@ -45,7 +45,7 @@ class TwitterForwarderBot(Bot):
                 chat_id=chat.chat_id,
                 disable_web_page_preview=not photo_url,
                 text="""
-{link_preview}*{name}* ([@{screen_name}](https://twitter.com/{screen_name})) at {created_at}:
+{link_preview}*{name}*:
 {text}
 -- [Link to this Tweet](https://twitter.com/{screen_name}/status/{tw_id})
 """
