@@ -1,0 +1,15 @@
+---
+application:
+  name: "telegram-twitter-forwarder-bot"
+  project: "Twitter"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "subs"
+  version: "8.0"
+routers:
+- name: "main-telegram-twitter-forwarder-bot"
+  routes:
+  - application_name: "telegram-twitter-forwarder-bot"
+    paths:
+    - "/*"
